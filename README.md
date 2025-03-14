@@ -37,8 +37,8 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/campaign-analytics-dashboard.git
-   cd campaign-analytics-dashboard
+   git clone https://github.com/IgnacioTosi/campaing-management.git
+   cd campaing-management
    ```
 
 2. Install dependencies:
