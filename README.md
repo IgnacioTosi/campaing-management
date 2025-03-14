@@ -77,6 +77,12 @@ Before you begin, ensure you have the following installed:
 
 The project follows a clean, modular architecture:
 
+
+## Project Structure
+
+The project follows a clean, modular architecture:
+
+```markdown
 campaign-management-dashboard/
 ├── app/                    # Next.js App Router
 │   ├── layout.tsx          # Root layout component
@@ -94,6 +100,7 @@ campaign-management-dashboard/
 │   └── utils.ts            # Helper functions
 ├── public/                 # Static assets
 └── README.md               # Project documentation
+```
 
 ## Core Components
 
@@ -110,8 +117,6 @@ The main page component that manages:
 A form component for adding new campaigns with:
 
 - Zod schema validation
-- React Hook Form integration
-- Prevention of negative values for numeric fields
 - Date validation (end date must be after start date)
 
 ### Campaign Table (`components/campaign-table.tsx`)
@@ -153,7 +158,6 @@ interface Campaign {
 The form implements the following validation rules:
 
 - All fields are required
-- Numeric fields must be non-negative
 - End date must be after start date
 - Real-time validation with error messages
 
