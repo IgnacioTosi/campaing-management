@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+These directives import the base styles, components, and utilities from Tailwind CSS.
+They are essential for Tailwind to work correctly in the application.
+*/
+
+@layer base {
+  :root {
+    /*
+    These are CSS custom properties that define the application's theme.
+    Each variable uses the HSL color format (Hue, Saturation, Lightness).
+    */
+
+    --background: 0 0% 100%;        /* Main background color (white) */
+    --foreground: 0 0% 3.9%;        /* Main text color (almost black) */
+    --card: 0 0% 100%;              /* Background color for cards */
+    --card-foreground: 0 0% 3.9%;   /* Text color for cards */
+    --popover: 0 0% 100%;           /* Background color for popover elements */
+    --popover-foreground: 0 0% 3.9%; /* Text color for popover elements */
+    --primary: 0 0% 9%;             /* Primary color (dark gray) */
+    --primary-foreground: 0 0% 98%; /* Text color on primary background */
+    --secondary: 0 0% 96.1%;        /* Secondary color (light gray) */
+    --secondary-foreground: 0 0% 9%; /* Text color on secondary background */
+    --muted: 0 0% 96.1%;            /* Muted color for less prominent elements */
+    --muted-foreground: 0 0% 45.1%; /* Muted text color */
+    --accent: 0 0% 96.1%;           /* Accent color to highlight elements */
+    --accent-foreground: 0 0% 9%;   /* Text color on accent */
+    --destructive: 0 84.2% 60.2%;   /* Color for destructive actions (red) */
+    --destructive-foreground: 0 0% 98%; /* Text color on destructive */
+    --border: 0 0% 89.8%;           /* Color for borders */
+    --input: 0 0% 89.8%;            /* Color for input borders */
+    --ring: 0 0% 3.9%;              /* Color for focus rings */
+
+    /*
+    Colors for charts and data visualizations
+    These are used in chart components as seen in CampaignCard
+    */
+    --chart-1: 12 76% 61%;          /* Orange/red */
+    --chart-2: 173 58% 39%;         /* Teal */
+    --chart-3: 197 37% 24%;         /* Dark blue */
+    --chart-4: 43 74% 66%;          /* Yellow */
+    --chart-5: 27 87% 67%;          /* Orange */
+
+    --radius: 0.5rem                /* Border radius for rounded elements */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;           /* Apply the defined border color to all elements */
+  }
+  body {
+    @apply bg-background text-foreground; /* Apply background and text colors to the body */
+  }
+}
