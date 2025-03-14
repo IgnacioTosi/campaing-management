@@ -77,13 +77,8 @@ Before you begin, ensure you have the following installed:
 
 The project follows a clean, modular architecture:
 
-
-## Project Structure
-
-The project follows a clean, modular architecture:
-
 ```markdown
-campaign-management-dashboard/
+campaing-management/
 ├── app/                    # Next.js App Router
 │   ├── layout.tsx          # Root layout component
 │   ├── page.tsx            # Main dashboard page
